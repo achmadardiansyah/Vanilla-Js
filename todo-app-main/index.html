@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/index.js" defer></script>
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="main-container">
+      <h1>TODO</h1>
+      <div class="theme-btn">
+        <img src="/images/icon-moon.svg" alt="" class="moon" id="moon">
+        <img src="/images/icon-sun.svg" alt="" class="sun" id="sun">
+      </div>
+    </div>
+  </header>
+
+  <!-- todo input -->
+  <div class="todo-container">
+    <div class="main-container">
+      <div class="todo-input-container">
+        <form>
+          <button class="round-btn" id="submit-btn" type="submit"></button>
+          <input type="text" class="todo-input" id="todo-input" placeholder="Create a new todo..." spellcheck="false" autocomplete="off">
+        </form>
+      </div>
+      <ul class="todo-list-container"></ul>
+      <div class="todo-filter-container" id="todo-filter-container">
+        <div class="todo-left">item left</div>
+        <div class="filter-option">
+          <span id="all">All</span>
+          <span id="active">Active</span>
+          <span id="completed">Completed</span>
+        </div>
+        <div class="clear-btn" id="clear-btn">
+          Clear Completed
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
