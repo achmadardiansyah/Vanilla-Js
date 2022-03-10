@@ -32,7 +32,7 @@ body.dark {
 }
 
 body.dark header {
-    background: url(/images/bg-desktop-dark.jpg);
+    background: url(../images/bg-desktop-dark.jpg);
 }
 
 body.dark .main-container .sun {
@@ -80,7 +80,7 @@ body.dark .li-text.checked {
 /* heading style */
 
 header {
-    background: url(/images/bg-desktop-light.jpg);
+    background: url(../images/bg-desktop-light.jpg);
     background-position: center;
     background-size: cover;
     height: 40vh;
@@ -218,7 +218,7 @@ header {
 }
 
 .check-btn.checked  img {
-    content: url(/images/icon-check.svg);
+    content: url(../images/icon-check.svg);
 }
 
 .li-text.checked {
@@ -240,7 +240,7 @@ header {
 @media screen and (max-width: 500px){
 
     body.dark header {
-        background: url(/images/bg-desktop-dark.jpg);
+        background: url(../images/bg-mobile-dark.jpg);
     }
 
     body.dark .todo-filter-container .filter-option {
@@ -248,7 +248,7 @@ header {
     }
 
     header {
-        background: url(/images/bg-mobile-light.jpg);
+        background: url(../images/bg-mobile-light.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
