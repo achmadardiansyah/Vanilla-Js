@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    background: #0E3EDA;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 15px;
+}
+
+.add-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: #051367;
+    color: #f1f1f1;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #051883;
+}
+
+.note-box {
+    width: 300px;
+    height: 330px;
+    background: #4D77FF;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.note-box nav {
+    padding: 0.4rem 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-box .date-info {
+    color: #fff;
+    font-weight: 500;
+}
+
+.note-box nav button {
+    margin-left: 10px;
+    font-size: 17px;
+    background: transparent;
+    color: #fff;
+    padding: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.note-box nav button:hover {
+    color: #051367;
+}
+
+.note-box textarea {
+    width: 100%;
+    height: 95%;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 0.9rem;
+    border-radius: 0 0 5px 5px;
+    background: #56BBF1;
+    font-size: 15px;
+    font-weight: bold;
+    overflow-y: auto;
+    line-height: 1.3;
+}
+
+.note-box textarea::placeholder {
+    font-weight: 300;
+    color: #eee;
+}
+
+/* notification */
+.notification {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50%;
+    width: 350px;
+    height: 150px;
+    background: #EFFFFD;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transition: 1s ease;
+}
+
+.notification h1 {
+    margin-bottom: 1.3rem;
+}
+
+.notification button {
+    outline: none;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    background: #051367;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.notification.show {
+    top: 30%;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 650px){
+    .add-btn {
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        padding: 3rem 0;
+    }
+
+    .add-btn {
+        top: 15px;
+    }
+}
